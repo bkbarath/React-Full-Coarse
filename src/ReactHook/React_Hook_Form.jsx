@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CommonTextField from "../CommonComponent/CommonTextField";
 import { useForm } from "react-hook-form";
+import Toggle from "../Toggle/Toggle";
 
 const React_Hook_Form = () => {
   const [submitValue, setSubmitValue] = useState("");
@@ -26,6 +27,7 @@ const React_Hook_Form = () => {
   };
   return (
     <div>
+      <Toggle/>
       <form onSubmit={handleSubmit(onSubmit)}>
         <h2>Sign Up</h2>
 
